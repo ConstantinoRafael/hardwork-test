@@ -21,29 +21,39 @@ export const BoxContent = styled.View`
     width: 90%;
     height: 20%;
     background-color: #FD317C;
-    padding: 20px;
+    padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    border-radius: 10px;
+
 `
 
 export const TitleContent = styled.Text`
-    font-size: 25px;
+    font-size: 20px;
     color:#fff;
     font-weight: 800;
 `
 
 export const TextContent = styled.Text`
     width: 80%;
-    font-size: 15px;
+    font-size: 12px;
     color: #fff;
 `
-
-export const ButtonContent = styled.TouchableOpacity`
-    width: 40%;
-    height: 15%;
-    background-color: #fff;
+export const ButtonContent = styled.View`
+    flex-direction: row;
+    justify-content: flex-end;
 `
 
-export const Teste = styled.View`
-    background-color: black;
+export const ButtonStyles = styled.TouchableOpacity`
+    width: 40%;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+`
+
+export const TextButton = styled.Text`
+    font-weight: 600;
 `

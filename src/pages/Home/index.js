@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Button } from "react-native";
-import { BoxContent, ButtonContent, Container, FullPage, PageContainer, TextContent, TitleContent } from "./styles";
+import { BoxContent, ButtonContent, ButtonStyles, Container, FullPage, PageContainer, TextContent, TextButton, TitleContent } from "./styles";
 import Header from "../../components/Header";
 
 function Home({ navigation }) {
@@ -15,11 +15,14 @@ function Home({ navigation }) {
                     <TextContent>
                         Prepare-se de forma personalizada respondendo ao banco de questões!
                     </TextContent>
-                    <ButtonContent title="Ir para questões" onPress={() => navigation.navigate("Questions")}>
-                        <Text>
-                            Começar
-                        </Text>
+                    <ButtonContent> 
+                        <ButtonStyles title="Ir para questões" onPress={() => navigation.navigate("Questions")}>
+                            <TextButton>
+                                Começar
+                            </TextButton>
+                        </ButtonStyles>
                     </ButtonContent>
+                    
                     
                 </BoxContent>
                 <BoxContent>
