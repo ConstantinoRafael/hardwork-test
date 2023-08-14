@@ -4,6 +4,7 @@ import { Container, PageContainer } from "./styles";
 import Header from "../../components/Header";
 import InputRange from "../../components/InputRange";
 import HeaderPage from './../../components/HeaderPage/index';
+import InputSwitch from "../../components/InputSwitch";
 
 function Personalize({ navigation }) {
     return(
@@ -11,8 +12,10 @@ function Personalize({ navigation }) {
             <Header />
             
             <PageContainer>
-                <HeaderPage navigation={navigation} titlePage={"Personalizar"}/>
+                {/* <HeaderPage navigation={navigation} titlePage={"Personalizar"}/> */}
                 {/* <InputRange min={0} max={200} steps={1} onValueChange={(value)=> console.log(value)}/> */}
+                <InputSwitch area={"Clínica médica"} />
+                <InputSwitch area={"Cirugia gera"} />
             </PageContainer>
         </Container>
     )
