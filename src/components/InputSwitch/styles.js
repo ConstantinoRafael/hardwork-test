@@ -3,10 +3,13 @@ import styled from "styled-components";
 export const AreaAndSwitch = styled.View`
     background-color: #D9D9D9 ;
     width: 90%;
-    height: 15%;
+    height: 40px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 7px;
 `
 
 export const TextArea = styled.Text`

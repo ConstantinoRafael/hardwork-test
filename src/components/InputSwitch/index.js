@@ -11,7 +11,7 @@ function InputSwitch({ area }) {
 
     return (
         <AreaAndSwitch>
-            {/* <TextArea>{area}</TextArea> */}
+            <TextArea>{area}</TextArea>
 
             
             <SwitchTrack isEnable={isEnable} onPress={() => setIsEnable(!isEnable)}>

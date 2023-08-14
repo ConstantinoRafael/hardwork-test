@@ -17,3 +17,17 @@ export const PageContainer = styled.View`
     align-items: center;
 `
 
+export const QuestionsByArea = styled.View`
+    width: 90%;
+    height: 45%;
+    background-color :#D9D9D9;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+`
+
+export const TitleOfSection = styled.Text`
+    font-weight: 600;
+    font-size: 20px;
+`
