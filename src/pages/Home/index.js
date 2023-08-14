@@ -29,12 +29,13 @@ function Home({ navigation }) {
                     <TitleContent>
                         PERSONALIZAR
                     </TitleContent>
-                    <ButtonContent title="Ir para questões" onPress={() => navigation.navigate("Questions")}>
-                        <Text>
-                            Acessar
-                        </Text>
-                    </ButtonContent>
-                    
+                    <ButtonContent> 
+                        <ButtonStyles title="Ir para personalizar" onPress={() => navigation.navigate("Personalize")}>
+                            <TextButton>
+                                Acessar
+                            </TextButton>
+                        </ButtonStyles>
+                    </ButtonContent>                    
                 </BoxContent>
                 <BoxContent>
                     <TitleContent>
