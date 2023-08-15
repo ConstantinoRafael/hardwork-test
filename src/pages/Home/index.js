@@ -10,6 +10,7 @@ function Home({ navigation }) {
             <Header/>
             <PageContainer>
                 <BoxHome 
+                navigation={navigation}
                 title={"QUESTÕES"}
                 text={"Prepare-se de forma personalizada respondendo ao banco de questões!"}
                 pageToGo={"Questions"}
@@ -17,6 +18,7 @@ function Home({ navigation }) {
                 />
 
                 <BoxHome 
+                navigation={navigation}
                 title={"PERSONALIZAR"}
                 pageToGo={"Personalize"}
                 textButton={"Acessar"}

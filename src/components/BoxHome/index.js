@@ -1,7 +1,7 @@
 import React from "react";
 import { BoxContent, ButtonContent, ButtonStyles, TextButton, TextContent, TitleContent } from "./styles"
 
-function BoxHome({icon, title, text, pageToGo, textButton}) {
+function BoxHome({navigation, icon, title, text, pageToGo, textButton}) {
     return(
         <BoxContent>
             <TitleContent>
