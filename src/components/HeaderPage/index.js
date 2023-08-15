@@ -1,10 +1,10 @@
 import React from "react";
-import {ButtonBackHome, HeaderPeageStyles, TextButton, IconButton, Title, RightSideHeader} from "./styles";
+import {ButtonBackHome, HeaderPageStyles, TextButton, IconButton, Title, RightSideHeader} from "./styles";
 import { AntDesign } from '@expo/vector-icons'; 
 
 function HeaderPage({ titlePage, navigation }) {
     return (
-        <HeaderPeageStyles>
+        <HeaderPageStyles>
             <ButtonBackHome title="Home" onPress={() => navigation.navigate("Home") }>
                 <IconButton>
                     <AntDesign name="left" size={16} color="black" />
@@ -18,7 +18,7 @@ function HeaderPage({ titlePage, navigation }) {
                 <Title>{titlePage}</Title>
             </RightSideHeader>
 
-        </HeaderPeageStyles>
+        </HeaderPageStyles>
     )
         
     

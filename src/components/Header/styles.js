@@ -1,11 +1,17 @@
 import styled from "styled-components";
 
-export const HeaderStyles = styled.View`
-    width: 100%;
+export const HeaderContainer = styled.View`
+    justify-content: center;
+    align-items: center;
     height: 8%;
+`
+
+export const HeaderStyles = styled.View`
+    width: 90%;
+    height: 100%;
     background-color:#1E1E1E;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 `
 

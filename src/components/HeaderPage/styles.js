@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderPeageStyles = styled.View`
+export const HeaderPageStyles = styled.View`
     width: 90%;
     height: 7%;
     background-color: #1E1E1E;

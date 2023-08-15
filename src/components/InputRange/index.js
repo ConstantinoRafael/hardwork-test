@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TextInput, Dimensions, StyleSheet } from "react-native";
+import { Text, TextInput, Dimensions } from "react-native";
 import { Track, TrackContainer, TrackValue, TrackAndValue, TrackAnimation } from "./styles";
 import Animated ,{ useAnimatedGestureHandler, useAnimatedStyle, useSharedValue, useAnimatedProps } from "react-native-reanimated";
 import { PanGestureHandler } from "react-native-gesture-handler";
@@ -7,7 +7,7 @@ import { PanGestureHandler } from "react-native-gesture-handler";
 const ATextInput = Animated.createAnimatedComponent(TextInput);
 const WIDTH = Dimensions.get('window').width - 90;
 const KNOBSIZE = 20;
-const MAXWIDTH = WIDTH - KNOBSIZE/2 ;
+const MAXWIDTH = WIDTH - KNOBSIZE/2 - 30;
 
 function InputRange({min, max, steps}) {
     
@@ -78,12 +78,12 @@ function InputRange({min, max, steps}) {
                             marginTop:-20,
                             marginLeft:-10,
                             borderWidth: 2,
-                            borderColor: "#575757",
+                            borderColor: "#000",
                             borderRadius:15,
                             justifyContent:"center",
                             alignItems: "center"
                         }, knobStyle]}>
-                            <Text>|  |</Text>
+                            <Text style={{fontWeight: "bold", marginBottom: 2}}>|  |</Text>
                         </Animated.View>
                     </PanGestureHandler>
             
@@ -101,7 +101,3 @@ function InputRange({min, max, steps}) {
 }
 
 export default InputRange;
-
-const styles = StyleSheet.create({
-
-})

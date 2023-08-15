@@ -1,11 +1,12 @@
 import React from "react";
-import { LogoText, HeaderStyles, RightHeaderContent, LogoContainer, RightText, ProfileImage, IconBox } from "./styles";
+import { LogoText, HeaderStyles, HeaderContainer, RightHeaderContent, LogoContainer, RightText, ProfileImage, IconBox } from "./styles";
 import { Image } from "react-native";
 import { Entypo } from '@expo/vector-icons';
 
 function Header() {
     return(
-        <HeaderStyles>
+        <HeaderContainer>
+            <HeaderStyles>
             <LogoContainer>
                 <LogoText>
                     LOGOTIPO
@@ -21,6 +22,8 @@ function Header() {
             
             </RightHeaderContent>
         </HeaderStyles>
+        </HeaderContainer>
+        
     )
 }
 

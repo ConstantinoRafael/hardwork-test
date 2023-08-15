@@ -19,16 +19,35 @@ export const PageContainer = styled.View`
 
 export const QuestionsByArea = styled.View`
     width: 90%;
-    height: 45%;
+    height: 42%;
     background-color :#D9D9D9;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
-    display: none;
+    padding-bottom: 7px;
+    
 `
 
 export const TitleOfSection = styled.Text`
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 18px;
+`
+
+export const DayleGoal = styled.View`
+    width: 90%;
+    height: 13%;
+    background-color: #D9D9D9;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+
+`
+
+export const Specifics = styled.View`
+    height: 10%;
+    width: 90%;
+    background-color: #D9D9D9;
+    border-radius: 10px;
 `

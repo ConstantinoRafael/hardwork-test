@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const TrackContainer = styled.View`
     width: 90%;
     height: 30px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
 `
 
 export const TrackAndValue = styled.View`
@@ -22,9 +26,8 @@ export const TrackValue = styled.View`
     width: 50px;
     height: 40px;
     background: #2FEB16;
-    border: 2px solid #575757;
+    border: 2px solid #000;
     border-radius: 4px;
-    margin-bottom: 10px;
     margin-left: 10px;
     justify-content: center;
     align-items: center;

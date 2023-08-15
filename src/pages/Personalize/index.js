@@ -1,10 +1,11 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { Container, PageContainer, QuestionsByArea, TitleOfSection } from "./styles";
+import { Container, PageContainer, QuestionsByArea, TitleOfSection, DayleGoal, Specifics } from "./styles";
 import Header from "../../components/Header";
 import InputRange from "../../components/InputRange";
 import HeaderPage from './../../components/HeaderPage/index';
 import InputSwitch from "../../components/InputSwitch";
+import InputSpecifics from "../../components/InputSpecifics";
 
 function Personalize({ navigation }) {
     return(
@@ -13,7 +14,11 @@ function Personalize({ navigation }) {
             
             <PageContainer>
                 <HeaderPage navigation={navigation} titlePage={"Personalizar"}/>
-                <InputRange min={0} max={200} steps={1} />
+                <DayleGoal>
+                    <TitleOfSection>Definir meta diária de questões:</TitleOfSection>
+                    <InputRange min={0} max={200} steps={1} />
+                </DayleGoal>
+                
                 
                 <QuestionsByArea>
                     <TitleOfSection>Questões por Grandes áreas:</TitleOfSection>
@@ -23,6 +28,9 @@ function Personalize({ navigation }) {
                     <InputSwitch area={"Ginecologia e obstetrícia"} />
                     <InputSwitch area={"Medicina preventiva"} />
                 </QuestionsByArea>
+
+                <Specifics></Specifics>
+                <Specifics></Specifics>
                 
             </PageContainer>
         </Container>
