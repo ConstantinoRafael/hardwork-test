@@ -25,6 +25,7 @@ export const QuestionsByArea = styled.View`
     justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
+    display: none;
 `
 
 export const TitleOfSection = styled.Text`

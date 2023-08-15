@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const TrackContainer = styled.View`
     width: 90%;
     height: 30px;
-    background-color: #D9D9D9;
 `
 
 export const TrackAndValue = styled.View`
@@ -13,17 +12,24 @@ export const TrackAndValue = styled.View`
 `
 
 export const Track = styled.View`
-    width: 80%;
-    height: 8px;
-    background-color: #2FEB16;
+    height: 10px;
+    background-color: #B5B5B5;
     border-radius: 4px;
-    border: 2px solid;
+    border: 2px solid #575757;
 `
 
-export const TrackValue = styled.Text`
-    width: 40px;
-    height: 30px;
+export const TrackValue = styled.View`
+    width: 50px;
+    height: 40px;
     background: #2FEB16;
-    border: 2px solid;
+    border: 2px solid #575757;
     border-radius: 4px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+`
+
+export const TrackAnimation = styled.View`
+    width: 80%;
 `

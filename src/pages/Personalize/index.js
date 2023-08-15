@@ -13,7 +13,7 @@ function Personalize({ navigation }) {
             
             <PageContainer>
                 <HeaderPage navigation={navigation} titlePage={"Personalizar"}/>
-                {/* <InputRange min={0} max={200} steps={1} onValueChange={(value)=> console.log(value)}/> */}
+                <InputRange min={0} max={200} steps={1} />
                 
                 <QuestionsByArea>
                     <TitleOfSection>Questões por Grandes áreas:</TitleOfSection>

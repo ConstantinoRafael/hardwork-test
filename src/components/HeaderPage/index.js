@@ -3,7 +3,6 @@ import {ButtonBackHome, HeaderPeageStyles, TextButton, IconButton, Title, RightS
 import { AntDesign } from '@expo/vector-icons'; 
 
 function HeaderPage({ titlePage, navigation }) {
-    console.log(titlePage);
     return (
         <HeaderPeageStyles>
             <ButtonBackHome title="Home" onPress={() => navigation.navigate("Home") }>
